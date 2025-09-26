@@ -1,0 +1,17 @@
+# CRUD Python - Gestión de Empleados
+# Dependencias del proyecto
+
+# El proyecto utiliza únicamente librerías estándar de Python
+# No requiere instalación de paquetes externos
+
+# Librerías estándar utilizadas:
+# - tkinter (Interfaz gráfica)
+# - sqlite3 (Base de datos)
+# - sys (Sistema)
+# - os (Sistema operativo)
+
+# Versión mínima recomendada de Python
+python>=3.8
+
+# Nota: No se requieren dependencias externas
+# Todas las librerías son parte de la instalación estándar de Python
