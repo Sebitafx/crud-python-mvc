@@ -52,15 +52,21 @@ class MainWindow:
     def _load_images(self):
         """Cargar las imágenes de los iconos"""
         try:
+            # Obtener la ruta base del proyecto
+            current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            assets_path = os.path.join(current_dir, "assets", "imagenes")
+            
             self.imagenes = {
-                'buscar': PhotoImage(file="assets/imagenes/buscar.png"),
-                'crear': PhotoImage(file="assets/imagenes/crear.png"),
-                'mostrar': PhotoImage(file="assets/imagenes/mostrar.png"),
-                'actualizar': PhotoImage(file="assets/imagenes/actualizar.png"),
-                'eliminar': PhotoImage(file="assets/imagenes/eliminar.png")
+                'buscar': PhotoImage(file=os.path.join(assets_path, "buscar.png")),
+                'crear': PhotoImage(file=os.path.join(assets_path, "crear.png")),
+                'mostrar': PhotoImage(file=os.path.join(assets_path, "mostrar.png")),
+                'actualizar': PhotoImage(file=os.path.join(assets_path, "actualizar.png")),
+                'eliminar': PhotoImage(file=os.path.join(assets_path, "eliminar.png"))
             }
+            print("✅ Imágenes cargadas correctamente")
         except Exception as e:
-            print(f"Error cargando imágenes: {e}")
+            print(f"❌ Error cargando imágenes: {e}")
+            print(f"📁 Buscando en: {assets_path if 'assets_path' in locals() else 'ruta no determinada'}")
             # Crear diccionario vacío si no se pueden cargar las imágenes
             self.imagenes = {key: None for key in ['buscar', 'crear', 'mostrar', 'actualizar', 'eliminar']}
     
