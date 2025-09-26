@@ -100,7 +100,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## �👤 Autor
 
-Desarrollado siguiendo las mejores prácticas de programación orientada a objetos y patrones de diseño.
+- Oriundo Tafur, Josué Sebastián
+- Huamán Toledo, Jhonatan Luis
+- Requena Alania, Elizabeth Beatriz
 
 ---
 ⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!
